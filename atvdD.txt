@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.14
+
+int main ()
+{
+    int R;
+    printf("Área e comprimento de um circulo!\n");
+    printf("Digite o valor do Raio: ");
+    scanf("%i", &R);
+    printf("Comprimento = %.1f\n", 1.0 * R * 2 * PI);
+    printf("Área = %.1f\n", PI * pow(R, 2));
+}

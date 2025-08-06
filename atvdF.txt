@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#define PI 3.14
+
+
+int main()
+{
+    int R;
+    printf("Volume em Litros de uma esfera!\n");
+    printf("Informe o Raio em M: ");
+    scanf("%i", &R);
+    printf("O volume dessa esfera em Litros é = %.1f\n",100000 * ((1.0 * 4 / 3) * PI * pow(R, 3)));
+}

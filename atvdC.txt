@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int L, H;
+    printf("Descubra a área do retângulo!\n");
+    printf("Valor do lado: ");
+    scanf("%i", &L);
+    printf("Valor da Altura: ");
+    scanf("%i", &H);
+    printf("Um retângulo de lado = %i e altura = %i tem área = %i \n", L, H, L * H);
+}

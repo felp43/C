@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main ()
+{
+    int L;
+    printf("Descubra a área do quadrado!\n");
+    printf("Digite o valor do lado: ");
+    scanf("%i",&L);
+    printf("O valor da Área do quadrado é %.1f\n", pow(1.0 * L, 2));
+}
