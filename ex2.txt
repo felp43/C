@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <locale.h>
+
+int main()
+{
+    int A, B, C;
+    setlocale(LC_ALL, "Portuguese");
+    printf("Cálculo da Hipotenusa\n");
+    printf("Valor de B: ");
+    scanf("%i",&B);
+    printf("Valor de C: ");
+    scanf("%i",&C);
+    printf("Com B = %i e C = %i o valor de A é igual a: %.1f\n", B, C, sqrt((pow(1.0 * B, 2) + pow(1.0 * C, 2))));
+    return 0;
+}
