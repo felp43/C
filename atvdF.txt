@@ -8,15 +8,15 @@ int main()
 {
     float R, area, volume, volumeLitro;
     printf("ESFERA: Dados de entrada\n");
-    printf("Raio(R) em Metros: ");
-    scanf("%f", &R);
+    printf("Raio(R) em Metros: "); scanf("%f", &R);
     printf("Dados da Esfera:\n");
     area = 4 * PI * pow(R, 2);
     volume = (1.0 * 4 / 3) * PI * pow(R, 3);
     volumeLitro = volume * 1000;
-    printf("Area: %.2f Metros Quadrados\nVolume: %.2f Metros Cubicos\nLitros: %.1f Litros\n", area, volume, volumeLitro);
+    printf("Area: %.2f Metros Quadrados\nVolume: %.2f Metros Cubicos\nLitros: %.2f Litros\n", area, volume, volumeLitro);
     return 0;
 }
+
 
 
 
