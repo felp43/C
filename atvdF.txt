@@ -6,9 +6,13 @@
 
 int main()
 {
-    int R;
-    printf("Volume em Litros de uma esfera!\n");
+    float R, area, volume, volumeLitro;
+    printf("Area e o volume em Litros e em M3 de uma esfera!\n");
     printf("Informe o Raio em M: ");
-    scanf("%i", &R);
-    printf("O volume dessa esfera em Litros é = %.1f\n",100000 * ((1.0 * 4 / 3) * PI * pow(R, 3)));
+    scanf("%f", &R);
+    area = 4 * PI * pow(R, 2);
+    volume = (1.0 * 4 / 3) * PI * pow(R, 3);
+    volumeLitro = volume * 100000;
+    printf("A area dessa esfera e = %.2f m2\nO volume dessa esfera em m3 e = %.2f m3\nE em Litros e = %.1f L\n", area, volume, volumeLitro);
+    return 0;
 }
