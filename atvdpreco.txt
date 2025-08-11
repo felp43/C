@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float preco, reajuste, totPagar, totCDesc, totDesc;
+    int qtd;
+    printf("Mercadoria: Dados de entrada\n");
+    printf("Preco(R$): "); scanf("%f", &preco);
+    printf("Quantidade: "); scanf("%i", &qtd);
+    printf("Reajuste(%%): "); scanf("%f", &reajuste);
+    totPagar = preco * qtd;
+    totCDesc = totPagar - (totPagar * reajuste/100);
+    totDesc = totPagar - totCDesc;
+    printf("Total a pagar (sem desconto): R$ %.2f\n", totPagar);
+    printf("Total a Pagar (%.2f%% OFF): R$ %.2f\n",reajuste, totCDesc);
+    printf("Desconto (%.2f%%): R$ %.2f", reajuste, totDesc);
+}
