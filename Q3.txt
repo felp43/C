@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float alt, larg, prof, med, gasolina, alcool, totCGaso, totCAlcool;
+    printf("Total a ser pago para encher o tanque: Dados de entrada\n");
+    printf("Altura do tanque em metros: "); scanf("%f", &alt);
+    printf("Largura do tanque em metros: "); scanf("%f", &larg);
+    printf("Profundidade do tanque em metros: "); scanf("%f", &prof);
+    med = larg * alt * prof;
+    printf("Preco por Litro (gasolina): R$"); scanf("%f", &gasolina);
+    printf("Preco por Litro (alcool): R$"); scanf("%f", &alcool);
+    totCGaso = (med * 1000) * gasolina;
+    totCAlcool = (med * 1000) * alcool;
+    printf("Para completar um tanque de %.2f Metros Cubicos\n", med);
+    printf("Somente com gasolina: R$%.2f\n", totCGaso);
+    printf("Somente com alcool: R$%.2f\n", totCAlcool);
+    printf("Com 20%% de alcool e 80%% de gasolina: R$%.2f\n", ((0.2 * totCAlcool) + (0.8 * totCGaso)));
+    return 0;
+}

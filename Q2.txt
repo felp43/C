@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define DOLAR 0.19
+#define EURO 0.16
+
+int main()
+{
+    float M, E, D;
+    printf("Leitor de Montante: Dados de entrada\n");
+    printf("Montante em R$: "); scanf("%f", &M);
+    D = M * DOLAR;
+    printf("Valor em Dolar: R$%.2f\n", D);
+    E = M * EURO;
+    printf("Montante em Euro: R$%.2f\n", E);
+    return 0;
+}
